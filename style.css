@@ -1,0 +1,214 @@
+/* CSS chung cho khung border (giữ nguyên) */
+.photo-border {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid #2c3e50;
+    border-radius: 15px;
+    background: #ecf0f1;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.photo-border .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    transition: opacity 0.4s ease;
+    opacity: 1;
+}
+
+.photo-border .gallery.fade-out {
+    opacity: 0;
+}
+
+.photo-border .gallery-item {
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    padding: 12px;
+    background: white;
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.photo-border .gallery-item:hover {
+    transform: scale(1.02);
+    border-color: #3498db;
+}
+
+.photo-border .gallery-item .gallery-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    cursor: pointer;
+}
+
+.photo-border .gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    background: #f0f0f0;
+    aspect-ratio: 4 / 3;
+}
+
+.photo-border .image-name {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+    .photo-border .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .photo-border .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CSS riêng cho phần tìm kiếm và bảng (cải tiến nổi bật) */
+.book-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    background: #f9f9f9;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #3498db;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(52,152,219,0.1), inset 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.table-wrapper {
+    border-radius: 16px;
+    overflow: auto;
+    max-height: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+#bookTable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: white;
+    font-size: 15px;
+}
+
+#bookTable thead {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+#bookTable thead tr {
+    background: linear-gradient(135deg, #2c3e50, #1e2a36);
+}
+
+#bookTable th {
+    padding: 16px 20px;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.85rem;
+}
+
+#bookTable td {
+    padding: 14px 20px;
+    border-bottom: 1px solid #ecf0f1;
+    color: #2c3e50;
+}
+
+/* Làm nổi bật cột thể loại */
+#bookTable td:first-child {
+    font-weight: 700;
+    color: #0b2b40;
+    background-color: #e6f2ff;
+    border-left: 4px solid #3498db;
+}
+
+/* Làm nổi bật cột tên sách */
+#bookTable td:nth-child(2) {
+    font-weight: 600;
+    color: #1c2e3f;
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+}
+
+/* Hàng xen kẻ màu */
+#bookTable tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+#bookTable tbody tr:hover {
+    background-color: #e8f0fe;
+    transition: background 0.2s;
+}
+
+/* Cột link (cuối) */
+#bookTable td:last-child {
+    text-align: center;
+}
+
+#bookTable a {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    transition: background 0.2s, transform 0.1s;
+    box-shadow: 0 2px 5px rgba(52,152,219,0.3);
+}
+
+#bookTable a:hover {
+    background: #2c3e50;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(44,62,80,0.2);
+}
+
+.empty-message {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    background: #f9f9f9;
+    border-radius: 0 0 16px 16px;
+}
+
+@media (max-width: 600px) {
+    #bookTable th, #bookTable td {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    #bookTable td:first-child {
+        border-left-width: 3px;
+    }
+    #bookTable a {
+        padding: 4px 10px;
+        font-size: 0.8rem;
+    }
+}

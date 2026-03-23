@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hai khung border ảnh + Bảng sách (tối ưu cuối)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PHẦN TÌM KIẾM VÀ BẢNG SÁCH -->
+    <div class="book-section">
+        <input type="text" id="searchInput" placeholder="🔍 Tìm theo thể loại hoặc tên sách...">
+
+        <!-- Khung border thứ nhất (phía trên bảng) -->
+        <div class="photo-border" id="photoBorderTop">
+            <div class="gallery" id="galleryTop">
+                <!-- 4 ô ảnh sẽ được tạo bằng JavaScript -->
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="bookTable">
+                <thead>
+                    <tr>
+                        <th>Thể loại</th>
+                        <th>Tên sách</th>
+                        <th>Link tải về</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Dữ liệu sẽ được render bằng JavaScript -->
+                </tbody>
+            </table>
+            <div id="emptyMessage" class="empty-message" style="display: none;">Không tìm thấy sách phù hợp.</div>
+        </div>
+    </div>
+
+    <!-- Khung border thứ hai (phía dưới bảng) -->
+    <div class="photo-border" id="photoBorderBottom">
+        <div class="gallery" id="galleryBottom">
+            <!-- 4 ô ảnh sẽ được tạo bằng JavaScript -->
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="adv.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
