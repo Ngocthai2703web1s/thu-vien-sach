@@ -2,20 +2,40 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Thư viện sách trực tuyến với kho tàng tri thức đa dạng: kỹ năng sống, văn học, khoa học, công nghệ, trinh thám, kinh tế, kinh dị và hơn thế nữa. Tìm kiếm sách nhanh chóng, tải về miễn phí.">
+    <meta name="keywords" content="thư viện sách, sách hay, tải sách miễn phí, sách kỹ năng sống, văn học, khoa học, công nghệ, trinh thám, kinh tế, kinh dị">
+    <meta name="author" content="Thư Viện Sách">
+    <meta property="og:title" content="Thư Viện Sách - Kho sách đa dạng">
+    <meta property="og:description" content="Khám phá hàng trăm đầu sách giá trị, dễ dàng tìm kiếm và tải về.">
+    <meta property="og:type" content="website">
     <title>Thư Viện Sách</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Main Styles -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- PHẦN TÌM KIẾM VÀ BẢNG SÁCH -->
+    <!-- PHẦN TÌM KIẾM, BỘ LỌC VÀ BẢNG SÁCH -->
     <div class="book-section">
-        <input type="text" id="searchInput" placeholder="🔍 Tìm theo thể loại hoặc tên sách...">
+        <!-- Ô tìm kiếm với icon Font Awesome -->
+        <div class="search-container">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" id="searchInput" placeholder="Tìm theo thể loại hoặc tên sách...">
+        </div>
+
+        <!-- Danh sách thể loại nổi bật -->
+        <div class="category-filter-wrapper">
+            <ul class="filter-list" id="categoryFilterList">
+                <!-- Sẽ được tạo động bằng JS -->
+            </ul>
+        </div>
 
         <!-- Khung border thứ nhất (phía trên bảng) -->
         <div class="photo-border" id="photoBorderTop">
             <div class="gallery" id="galleryTop">
-                <!-- 4 ô ảnh sẽ được tạo bằng JavaScript -->
+                <!-- 4 ô ảnh động do adv.js quản lý -->
             </div>
         </div>
 
@@ -23,28 +43,31 @@
             <table id="bookTable">
                 <thead>
                     <tr>
-                        <th>Thể loại</th>
-                        <th>Tên sách</th>
-                        <th>Link tải về</th>
+                        <th><i class="fas fa-tag"></i> Thể loại</th>
+                        <th><i class="fas fa-book-open"></i> Tên sách</th>
+                        <th><i class="fas fa-download"></i> Link tải về</th>
                     </tr>
                 </thead>
                 <tbody id="tableBody">
-                    <!-- Dữ liệu sẽ được render bằng JavaScript -->
+                    <!-- Dữ liệu render bằng JS -->
                 </tbody>
             </table>
-            <div id="emptyMessage" class="empty-message" style="display: none;">Không tìm thấy sách phù hợp.</div>
+            <div id="emptyMessage" class="empty-message" style="display: none;">
+                <i class="fas fa-book-open" style="margin-right: 6px;"></i> Không tìm thấy sách phù hợp.
+            </div>
         </div>
     </div>
 
     <!-- Khung border thứ hai (phía dưới bảng) -->
     <div class="photo-border" id="photoBorderBottom">
         <div class="gallery" id="galleryBottom">
-            <!-- 4 ô ảnh sẽ được tạo bằng JavaScript -->
+            <!-- 4 ô ảnh động do adv.js quản lý -->
         </div>
     </div>
 
+    <!-- Các file JS được tách riêng: data.js, main.js, adv.js -->
     <script src="data.js"></script>
-    <script src="adv.js"></script>
     <script src="main.js"></script>
+    <script src="adv.js"></script>
 </body>
 </html>
