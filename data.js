@@ -55,7 +55,13 @@ window.imageData = [
 	{ src: 'https://down-tx-vn.img.susercontent.com/vn-11134207-81ztc-mlbihhl2e22t11.webp', name: 'Nước giặt xả TOPGIA hương lavender dịu nhẹ, tẩy sạch vết bẩn, lưu hương 72H, an toàn lành tính', link: 'https://s.shopee.vn/9ztQUproxc' },
 	{ src: 'https://down-tx-vn.img.susercontent.com/vn-11134207-7ra0g-m6xcgvjtar08ee.webp', name: 'Chảo Chống Dính Sâu Lòng Vân Đá Tổ Ong Được Cho Mọi Loại Bếp Chất Liệu Inox 3 Lớp Cao Cấp Tiện Dụng', link: 'https://s.shopee.vn/2qQFxnXg40' },
 	{ src: 'https://down-tx-vn.img.susercontent.com/vn-11134207-7r98o-lzfol6tlaobl4f.webp', name: 'Hộp Cơm Cắm Điện Hâm Nóng Inox Cao Cấp 3 Tầng Đa Năng Làm Nóng Nhanh An Toàn Chính Hãng', link: 'https://s.shopee.vn/9KdjhnlWZG' },
-	{ src: 'https://down-bs-vn.img.susercontent.com/73ce0c0d2e5e24e895882149a1e84c38.webp', name: 'Sáp thơm phòng khử mùi phòng ngủ nhà vệ sinh toilet ô tô 190g siêu tiện lợi GALA HOME', link: 'https://s.shopee.vn/8phTKkNDEC' }
+	{ src: 'https://down-bs-vn.img.susercontent.com/73ce0c0d2e5e24e895882149a1e84c38.webp', name: 'Sáp thơm phòng khử mùi phòng ngủ nhà vệ sinh toilet ô tô 190g siêu tiện lợi GALA HOME', link: 'https://s.shopee.vn/8phTKkNDEC' },
+	{ src: 'https://down-aka-vn.img.susercontent.com/cn-11134207-7r98o-lwxzro2gn29x3d.webp', name: '(Hộp 10 Gói) Dầu Gội Nhuộm Màu Tóc Thảo Dược, Thảo Dược Tự Nhiên An Toàn, Nuôi Dưỡng Tóc Khoẻ Óng Mượt', link: 'https://s.shopee.vn/AKWLl6OoyF' },
+	{ src: 'https://down-bs-vn.img.susercontent.com/vn-11134207-7ras8-mbszia6wqmbyc3.webp', name: 'COMBO 5 TÚI 50 Viên Tẩy Bồn Cầu, Viên Thả Bồn Cầu Thế Hệ Mới Tẩy Sạch Vệ Sinh Bám Bẩn', link: 'https://s.shopee.vn/30junoWCgo' },
+	{ src: 'https://down-bs-vn.img.susercontent.com/vn-11134207-7qukw-lf14mxrqqedz09.webp', name: 'Găng tay chống nắng nam nữ, ống tay chống tia UV, thun lạnh, co giãn 4 chiều chính hiệu Luxury Korea', link: 'https://s.shopee.vn/70G3ZHfAKO' },
+	{ src: 'https://down-bs-vn.img.susercontent.com/vn-11134207-7ra0g-m7xdyj1s769u1a.webp', name: 'Mũ Chống Nắng Chống 99% Tia UV Kèm Khẩu Trang Che Cổ Có Thể Tháo Rời Thoáng Khí, Chống Bụi Hiệu Quả', link: 'https://s.shopee.vn/9UxOXypQfl' },
+	{ src: 'https://down-bs-vn.img.susercontent.com/vn-11134207-820l4-miy2yitco8au68.webp', name: 'Combo 2 Hộp 60 Túi Trà Gạo Lứt, Hoa Nhài, Cỏ Ngọt, Vừng Đen, Đậu Đen, Đậu Đỏ, Lá Nếp', link: 'https://s.shopee.vn/9ztfAHAO1g' },
+	{ src: 'https://down-zl-vn.img.susercontent.com/vn-11134207-7ra0g-m9slcm5i4dimd2.webp', name: 'Bột Chanh Muối Organic-Hộp 500gr- Điện Giải Bù Khoáng- Việt Nhật Nutrition', link: 'https://s.shopee.vn/5fmpdASbOi' }
 	
 ];
 
